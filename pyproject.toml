@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "loguru-middleware"
+version = "0.1.0"
+description = ""
+authors = ["pt20 <th.prayag@outlook.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+loguru = "^0.5.3"
+starlette = "^0.17.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+pytest-cov = "^3.0.0"
+black = "^21.11b1"
+mypy = "^0.910"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
