@@ -19,7 +19,7 @@ class InterceptHandler(logging.Handler):
         except ValueError:
             level = str(record.levelno)
 
-        # Find caller that originated the logged message
+        # Find caller that originated the logged message..
         frame, depth = logging.currentframe(), 2
         while frame.f_code.co_filename == logging.__file__:
             frame = cast(FrameType, frame.f_back)
